@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lilita+One&display=swap');
+
+*,body {
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-color: #85FFBD; */
+    background-image: linear-gradient(45deg, #85FFBD 0%, #9bff7d 100%);
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: black 2px solid;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #9bff7d 100%);
+    opacity: 0.8;
+}
+nav h2 {
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 550px;
+    display: none;
+}
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lilita One', cursive;
+}
+@media (min-width:768px) {
+    .nav-links{
+        display: flex;
+    }
+    .hamburger {
+        display: none;
+    }
+}
