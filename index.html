@@ -6,36 +6,74 @@
     <title>Spendify</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <h2>Spendify</h2>
+        <h2 class="animate__animated animate__bounce">Spendify</h2>
         <div><img class="hamburger" src="image/more.png" alt=""></div>
-        <div class="nav-links">
-            <a href="#">How we work</a>
-            <a href="#">What we do</a>
+        <div class="nav-links animate__animated animate__lightSpeedInRight">
+            <a href="#how-we-work">How we work</a>
+            <a href="#what-we-do">What we do</a>
             <a href="#">Community</a>
             <a href="#">Contact</a>
         </div>
-        <div id="night" onclick="nightmode()" class="nightmode"><img src="image/moon.png" alt=""></div>
-        <div id="day" onclick="lightmode()" class="lightmode"><img src="image/brightness.png" alt=""></div>
     </nav>    
 
     <section id="hero" class="herosection">
         <div class="content-hero">
             <h1 id="txt">Spendify</h1>
-            <p>Spending made easy with <br> spendify</p>
+            <p>Simplify Your Spending with <br> Spendify.</p>
             <button onclick="signUp()">Sign up</button>
         </div>
         <div class="image-hero"></div>
     </section>
+
+    <!-- <div class="arrow">
+        <img src="image/arrow.png" alt="" width="700px">
+    </div> -->
+
+    <main id="how-we-work" class="how-we-work">
+        <div class="txt-work">
+            <h2 data-aos="flip-left" data-aos-delay="200">Welcome To Spendify, Where We Dive Headfirst Into The World Of Money, Specifically Your Hard-Earned Cash! 💸  Our Mission? To Make Your Spending A Breeze And Your Life Stress-Free. But Wait, There's So Much More To Discover! So Come On In And Join The Spendify Revolution! 🚀 </h2>
+        </div>
+        <div data-aos="flip-down" data-aos-delay="500"  class="phone-img">
+            <div class="form">
+    <h2 style="font-family: 'Acme', sans-serif; text-align: center; margin-bottom: 30px; color: rgb(23, 3, 41);">📦 Spendify 📦 </h2>
+                <label for="firstname" style="margin-left: 15px;">firstname</label>
+                <div class="firstname">John</div> 
+                <label for="lastname" style="margin-left: 15px;">lastname</label>
+                <div class="lastname">Brooks</div>
+                <label for="email" style="margin-left: 15px;">email</label>
+                <div class="email">johnbrooks2@gmail.com</div>
+                <label for="password" style="margin-left: 15px;">password</label>
+                <div class="password">***********</div>
+                <div class="button">Sign up</div>
+            </div>
+        </div>
+    </main>
+
+    <main id="what-we-do" class="we-do">
+
+    </main>
+
+    <!-- javascript components -->
+
     <main id="form" class="wrap-container">
         <div class="form-div">
             <form action="">
-    
+                
             </form>
         </div>
-    </main>
+    </main> 
+
+
+    
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+          AOS.init();
+    </script>
 </body>
 </html>
